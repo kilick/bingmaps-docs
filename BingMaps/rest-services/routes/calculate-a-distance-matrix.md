@@ -73,6 +73,10 @@ Make an Asynchronous request if the travel mode is driving and:
 
 * A start time and an end time is specified and the total number of origins-destinations pairs is less than or equal to 2,500 for Basic or 40,000 for Enterprise Bing Maps accounts and no start time is specified.
 
+&nbsp;&nbsp;&nbsp;&nbsp;**or**
+
+Your synchronous results are timing out. This may happen due to large requests or complex road networks in the area.
+
 If your scenario doesn’t fit either of the parameters outlined above for synchronous and asynchronous requests, you will need to break your request up into smaller chunks. Note that transactions are based on the total number of cells in the resulting matrix and not on the number of requests, so the same number of transactions would be generated if you make two requests that generate 100 cells each or 1 request that generates 200 cells.
 
 **How asynchronous requests work**
